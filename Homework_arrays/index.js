@@ -100,16 +100,20 @@ document.write(getWeekend(day, array7));
 console.log('Задание 8');
 
 let n = 1000;
-let num = 0;
 
-for(num; num < n; num++) {
-	if(n > 50) {
-		n /= 2;
+function divideN (n) {
+	let num = 0
+	for(num; num < n; num++) {
+		if(n > 50) {
+			n /= 2;
+		}
 	}
+	let result = `n = ${n}, num = ${num}`;
+	return result;
 }
 
-console.log(`n = ${n}`);
-console.log(`num = ${num}`);
+console.log(divideN (n));
+
 
 
 
